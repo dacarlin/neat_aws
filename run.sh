@@ -1,9 +1,8 @@
 #!/bin/bash
-#
 
-subread=`ls /home/ec2-user/input_files/*subreadset.xml`
-barcode=/home/ec2-user/neat_aws/barcodes.fasta
-preset=/home/ec2-user/neat_aws/preset.xml 
-
-/home/ec2-user/smrtlink/smrtcmds/bin/pbsmrtpipe -e eid_subread:$subread -e eid_barcode:$barcode --preset-xml $preset
-
+/home/ec2-user/smrtlink/smrtcmds/bin/pbsmrtpipe \
+	pipeline-id pbsmrtpipe.pipelines.sa3_ds_ccs \
+	-e eid_subread:/home/ec2-user/input_files/m54048_170422_091135.subreadset.xml \
+	--preset-xml task.xml \
+	--preset-xml global.xml \
+	-o ../out_css
