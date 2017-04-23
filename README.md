@@ -7,27 +7,6 @@
 3. copy data 
 4. run analysis 
 
-### Launch and config an EC2 instance 
-
-This one works well: m4.10xlarge (16 CPU, 64 GB RAM), and add 100 GB storage ($0.886 per hour). 
-
-### Install SMRTLink 
-
-First, download and unzip it 
-
-```bash
-curl -O https://downloads.pacbcloud.com/public/software/installers/smrtlink_4.0.0.190159.zip
-unzip -P SmrT3chN smrtlink_4.0.0.190159.zip
-```
-
-Now you can install it right here (doesn't matter where) 
-
-```bash
-./smrtlink_4.0.0.190159.run --rootdir smrtlink 
-```
-
-You will need to provide all the options. Most (all?) can be left as default. 
-
 ### Copy your data files to the instance 
 
 Log in to Cabernet, and run copy your files up using a script like this 
@@ -36,7 +15,23 @@ Log in to Cabernet, and run copy your files up using a script like this
 scp -r -i aws.pem /share/dnat/sequel/r54048_20170420_165522/5_E01 ec2-user@{amazon-dns}:input_files 
 ```
 
-which will put the files on AWS. 
+which will put the files on AWS. The rest is all on AWS
+
+### Launch and config an EC2 instance 
+
+This one works well: m4.10xlarge (16 CPU, 64 GB RAM), and add 100 GB storage ($0.886 per hour). 
+
+### Install SMRTLink 
+
+First, download and unzip it, and install it 
+
+```bash
+curl -O https://downloads.pacbcloud.com/public/software/installers/smrtlink_4.0.0.190159.zip
+unzip -P SmrT3chN smrtlink_4.0.0.190159.zip
+./smrtlink_4.0.0.190159.run --rootdir smrtlink 
+```
+
+You will need to provide all the options. Most (all?) can be left as default. 
 
 ### Run the consensus with barcoding 
 
@@ -47,3 +42,5 @@ git clone https://github.com/dacarlin/neat_aws.git
 cd neat_aws 
 bash run.sh
 ```
+
+And the outputs should be in `/home/ec2-user/output_files`
