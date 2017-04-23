@@ -23,7 +23,7 @@ unzip -P SmrT3chN smrtlink_4.0.0.190159.zip
 Now you can install it right here (doesn't matter where) 
 
 ```bash
-./smrtlink_4.0.0.190159.run --rootDir smrtlink 
+./smrtlink_4.0.0.190159.run --rootdir smrtlink 
 ```
 
 You will need to provide all the options. Most (all?) can be left as default. 
