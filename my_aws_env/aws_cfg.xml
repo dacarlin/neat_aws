@@ -14,7 +14,7 @@
             <value>False</value>
         </option>
         <option id="pbsmrtpipe.options.max_nchunks">
-            <value></value>
+            <value>24</value>
         </option>
         <option id="pbsmrtpipe.options.distributed_mode">
             <value>False</value>
@@ -26,7 +26,8 @@
             <value></value>
         </option>
         <option id="pbsmrtpipe.options.max_nworkers">
-            <value>1000</value>
+            <value>100</value>
         </option>
     </options>
 </pipeline-preset-template>
+
