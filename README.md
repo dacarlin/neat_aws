@@ -4,9 +4,11 @@ instance|cores|RAM|storage|price
 --------|-----|---|-------|------
 m4.4xlarge|16|64 GB|EBS|$0.862 per Hour
 
-You get however much storage you need with Elastic Block Storage (EBS). 
+You get however much storage you need with Elastic Block Storage (EBS), I used 100 GB for the single cell I was looking at. 
 
-Launch the instance from the console and note the public DNS or IP. You will, as part of launcing the instance, create an AWS key file (PEM). You'll need the IP and the file to log in. 
+Launch the instance from the console and note the public DNS or IP. You will, as part of launcing the instance, create an AWS key file (PEM). 
+
+I saved my key file as "aws.pem". You'll need the IP and the file to log in to the instance. 
 
 ```bash
 ssh -i aws.pem ec2-user@{amazon-dns}
@@ -16,7 +18,7 @@ once logged in, you can download and install the SMRTLink software.
 
 ## SMRTLink installation 
 
-You can just install SMRTLink right here in the home dir, in a directory called `smrt`. 
+You can install SMRTLink right here in the home dir, in a directory called `smrt`. 
 
 ```bash
 curl -O https://downloads.pacbcloud.com/public/software/installers/smrtlink_4.0.0.190159.zip
@@ -24,7 +26,7 @@ unzip -P SmrT3chN smrtlink_4.0.0.190159.zip
 ./smrtlink_4.0.0.190159.run --rootdir smrt 
 ``` 
 
-All of the default options are fine (just press `Enter`). 
+All of the default options are fine (just press `Enter`).
 
 ## Copy your data files to the instance 
 
