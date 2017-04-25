@@ -1,6 +1,7 @@
 ## AWS config for PacBio SMRTLink 
 
 instance|cores|RAM|storage|price
+--------|-----|---|-------|------
 m4.4xlarge|16|64 GB|EBS|$0.862 per Hour
 
 You get however much storage you need with Elastic Block Storage (EBS). 
