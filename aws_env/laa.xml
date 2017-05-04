@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<pipeline-preset-template>
+    <task-options>
+        <option id="pblaa.task_options.junk_file">
+            <value>amplicon_analysis_chimeras_noise.fastq</value>
+        </option>
+        <option id="pblaa.task_options.cluster_loop_weight">
+            <value>0.0010000000475</value>
+        </option>
+        <option id="pblaa.task_options.min_split_reads">
+            <value>20</value>
+        </option>
+        <option id="pblaa.task_options.phasing">
+            <value>False</value>
+        </option>
+        <option id="pblaa.task_options.max_length">
+            <value>2000</value>
+        </option>
+        <option id="pblaa.task_options.max_phasing_reads">
+            <value>500</value>
+        </option>
+        <option id="pblaa.task_options.ignore_bc">
+            <value>False</value>
+        </option>
+        <option id="pblaa.task_options.input_report_file">
+            <value>amplicon_analysis_input.csv</value>
+        </option>
+        <option id="pblaa.task_options.full_length">
+            <value>False</value>
+        </option>
+        <option id="pblaa.task_options.result_file">
+            <value>amplicon_analysis.fastq</value>
+        </option>
+        <option id="pblaa.task_options.take_n">
+            <value>0</value>
+        </option>
+        <option id="pblaa.task_options.min_predicted_accuracy">
+            <value>0.949999988079</value>
+        </option>
+        <option id="pblaa.task_options.max_clustering_reads">
+            <value>500</value>
+        </option>
+        <option id="pblaa.task_options.min_split_score">
+            <value>500</value>
+        </option>
+        <option id="pblaa.task_options.min_barcode_score">
+            <value>0</value>
+        </option>
+        <option id="pblaa.task_options.max_reads">
+            <value>2000</value>
+        </option>
+        <option id="pblaa.task_options.min_read_score">
+            <value>0.75</value>
+        </option>
+        <option id="pblaa.task_options.rng_seed">
+            <value>42</value>
+        </option>
+        <option id="pblaa.task_options.clustering">
+            <value>False</value>
+        </option>
+        <option id="pblaa.task_options.barcodes">
+            <value />
+        </option>
+        <option id="pblaa.task_options.chimera_filter">
+            <value>False</value>
+        </option>
+        <option id="pbcoretools.task_options.score_mode">
+            <value>asymmetric</value>
+        </option>
+        <option id="pblaa.task_options.log_file">
+            <value />
+        </option>
+        <option id="pblaa.task_options.trim_ends">
+            <value>0</value>
+        </option>
+        <option id="pblaa.task_options.model_path">
+            <value />
+        </option>
+        <option id="pblaa.task_options.min_split_fraction">
+            <value>0.10000000149</value>
+        </option>
+        <option id="pblaa.task_options.min_snr">
+            <value>3.75</value>
+        </option>
+        <option id="pblaa.task_options.min_length">
+            <value>3000</value>
+        </option>
+        <option id="pblaa.task_options.cluster_inflation">
+            <value>2</value>
+        </option>
+        <option id="pblaa.task_options.report_file">
+            <value>amplicon_analysis_summary.csv</value>
+        </option>
+        <option id="pblaa.task_options.subreads_report_prefix">
+            <value>amplicon_analysis_subreads</value>
+        </option>
+        <option id="pblaa.task_options.model_spec">
+            <value />
+        </option>
+        <option id="pblaa.task_options.do_bc">
+            <value />
+        </option>
+        <option id="pblaa.task_options.chimera_score_threshold">
+            <value>1</value>
+        </option>
+        <option id="pblaa.task_options.ignore_ends">
+            <value>0</value>
+        </option>
+    </task-options>
+</pipeline-preset-template>
