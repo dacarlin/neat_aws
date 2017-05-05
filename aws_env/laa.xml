@@ -47,7 +47,7 @@
             <value>0</value>
         </option>
         <option id="pblaa.task_options.max_reads">
-            <value>2000</value>
+            <value>500</value>
         </option>
         <option id="pblaa.task_options.min_read_score">
             <value>0.75</value>
@@ -83,7 +83,7 @@
             <value>3.75</value>
         </option>
         <option id="pblaa.task_options.min_length">
-            <value>3000</value>
+            <value>500</value>
         </option>
         <option id="pblaa.task_options.cluster_inflation">
             <value>2</value>
